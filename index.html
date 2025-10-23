@@ -1,59 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>CSS Quiz — Created by Rameel Tanveer</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Quiz - Rameel Tanveer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app">
-    <!-- LOGIN PANEL -->
-    <section id="loginSection" class="panel center">
-      <div class="card small">
-        <h1>CSS Quiz</h1>
-        <p class="muted">Enter your name to start. One attempt per name.</p>
-        <input id="nameInput" type="text" placeholder="Your full name" />
-        <div class="actions">
-          <button id="startWithName" class="btn primary">Start Quiz</button>
-        </div>
-        <p id="loginMsg" class="muted small"></p>
-      </div>
+    <!-- Login Section -->
+    <section id="loginSection">
+        <h1>Welcome to CSS Quiz</h1>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button id="startWithName">Start Quiz</button>
+        <p id="loginMsg" class="msg"></p>
     </section>
 
-    <!-- QUIZ APP -->
+    <!-- Quiz Section -->
     <section id="quizApp" class="hidden">
-      <header class="topbar">
-        <h2>CSS Quiz — Created by Rameel Tanveer</h2>
-        <div class="timers">
-          <div class="timer">Total Left: <span id="globalTimer">40:00</span></div>
-          <div class="timer small">Q Time: <span id="qTimer">00:40</span></div>
+        <div class="quiz-header">
+            <span id="progressText">Question 1 / 40</span>
+            <span id="topicBadge">Topic</span>
         </div>
-      </header>
-
-      <main class="card">
-        <div class="meta-row">
-          <div id="progressText">Question 1 / 40</div>
-          <div id="topicBadge" class="badge">Topic</div>
+        <div id="questionText">Question text will appear here</div>
+        <div id="optionsList" class="options"></div>
+        <div class="quiz-footer">
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+            <div class="timers">
+                <span>Global Timer: <span id="globalTimer">40:00</span></span>
+                <span>Question Timer: <span id="qTimer">0:40</span></span>
+            </div>
         </div>
-        <div class="question-box">
-          <div id="questionText" class="question">Loading...</div>
-          <div id="optionsList" class="options"></div>
-        </div>
-        <div class="controls">
-          <button id="prevBtn" class="btn ghost" disabled>◀ Prev</button>
-          <div class="control-right">
-            <button id="nextBtn" class="btn primary" disabled>Next ▶</button>
-          </div>
-        </div>
-      </main>
-      <footer class="footer">
-        <div>CSS Quiz - Created by <strong>Rameel Tanveer</strong></div>
-        <div class="muted small">All rights reserved ©</div>
-      </footer>
     </section>
-  </div>
 
-<script src="script.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Rameel Tanveer</h3>
+            <p>Full Stack Developer | CSS Quiz Project</p>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/rameeltanveer-dev" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

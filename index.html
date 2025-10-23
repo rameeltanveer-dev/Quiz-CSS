@@ -1,19 +1,18 @@
-      <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Quiz — Rameel Tanveer</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>CSS Quiz — Created by Rameel Tanveer</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="app">
-  <!-- Login -->
   <section id="loginSection" class="panel center">
     <div class="card small">
-      <h1>CSS Quiz</h1>
+      <h1>CSS Quiz - Created by Rameel Tanveer</h1>
       <p class="muted">Enter your name to start. One attempt per name.</p>
-      <input id="nameInput" type="text" placeholder="Your full name">
+      <input id="nameInput" type="text" placeholder="Your full name" />
       <div class="actions">
         <button id="startWithName" class="btn primary">Start Quiz</button>
       </div>
@@ -21,10 +20,9 @@
     </div>
   </section>
 
-  <!-- Quiz -->
   <section id="quizApp" class="hidden">
     <header class="topbar">
-      <h2>CSS Quiz</h2>
+      <h2>CSS Quiz — Created by Rameel Tanveer</h2>
       <div class="timers">
         <div class="timer">Total Left: <span id="globalTimer">40:00</span></div>
         <div class="timer small">Q Time: <span id="qTimer">00:40</span></div>
@@ -51,12 +49,11 @@
     </main>
 
     <footer class="footer">
-      <div>CSS Quiz — Rameel Tanveer</div>
+      <div>CSS Quiz - Created by <strong>Rameel Tanveer</strong></div>
       <div class="muted small">All rights reserved ©</div>
     </footer>
   </section>
 
-  <!-- Result Modal -->
   <div id="resultModal" class="modal hidden">
     <div class="modal-card">
       <h2>Your Result</h2>
@@ -66,8 +63,6 @@
         <div class="stat"><div id="statWrong" class="stat-num">0</div><div class="stat-label">Wrong</div></div>
         <div class="stat"><div id="statPercent" class="stat-num">0%</div><div class="stat-label">Percentage</div></div>
       </div>
-      <h3>Topic-wise Analysis</h3>
-      <div id="topicAnalysis" class="analysis"></div>
       <div class="modal-actions">
         <button id="closeModalBtn" class="btn primary">Close</button>
         <button id="restartBtn" class="btn ghost">Restart</button>
